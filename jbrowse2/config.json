@@ -1,0 +1,102 @@
+{
+  "assemblies": [
+    {
+      "name": "LjG1.1",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "LjG1.1-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "data/jamapa/sequence.fasta.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "data/jamapa/sequence.fasta.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "data/jamapa/sequence.fasta.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
+      "name": "sars-cov2",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "sars-cov2-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "data/sars-cov2/sequence.fasta.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "data/sars-cov2/sequence.fasta.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "data/sars-cov2/sequence.fasta.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    }
+  ],
+  "configuration": {},
+  "connections": [],
+  "tracks": [
+    {
+      "type": "FeatureTrack",
+      "trackId": "jamapa-genes",
+      "name": "JAMAPA Genes",
+      "assemblyNames": ["LjG1.1"],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "data/jamapa/jamapa_predictedGenes.sorted.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "data/jamapa/jamapa_predictedGenes.sorted.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "jamapa-genes-LinearBasicDisplay"
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "sars-cov2-genes",
+      "name": "SARS‑CoV‑2 Genes",
+      "assemblyNames": ["sars-cov2"],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "data/sars-cov2/ncbi_modified.gff3.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "data/sars-cov2/ncbi_modified.gff3.gz.tbi",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearBasicDisplay",
+          "displayId": "sars-cov2-genes-LinearBasicDisplay"
+        }
+      ]
+    }
+  ]
+}
