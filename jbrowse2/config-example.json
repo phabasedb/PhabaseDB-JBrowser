@@ -21,6 +21,28 @@
           }
         }
       }
+    },
+    {
+      "name": "sars-cov2",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "sars-cov2-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "data/sars-cov2/sequence.fasta.gz",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "data/sars-cov2/sequence.fasta.gz.fai",
+            "locationType": "UriLocation"
+          },
+          "gziLocation": {
+            "uri": "data/sars-cov2/sequence.fasta.gz.gzi",
+            "locationType": "UriLocation"
+          }
+        }
+      }
     }
   ],
   "configuration": {},
