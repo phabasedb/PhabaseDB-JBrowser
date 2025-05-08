@@ -5,40 +5,19 @@
       "sequence": {
         "type": "ReferenceSequenceTrack",
         "trackId": "LjG1.1-ReferenceSequenceTrack",
+        "name": "JAMAPA_SEQUENCE",
         "adapter": {
           "type": "BgzipFastaAdapter",
           "fastaLocation": {
-            "uri": "data/jamapa/jamapa_genome.fa.gz",
+            "uri": "data/jamapa/Lotusjaponicus_Gifu_v1.2_genome.fa.gz",
             "locationType": "UriLocation"
           },
           "faiLocation": {
-            "uri": "data/jamapa/jamapa_genome.fa.gz.fai",
+            "uri": "data/jamapa/Lotusjaponicus_Gifu_v1.2_genome.fa.gz.fai",
             "locationType": "UriLocation"
           },
           "gziLocation": {
-            "uri": "data/jamapa/jamapa_genome.fa.gz.gzi",
-            "locationType": "UriLocation"
-          }
-        }
-      }
-    },
-    {
-      "name": "sars-cov2",
-      "sequence": {
-        "type": "ReferenceSequenceTrack",
-        "trackId": "sars-cov2-ReferenceSequenceTrack",
-        "adapter": {
-          "type": "BgzipFastaAdapter",
-          "fastaLocation": {
-            "uri": "data/sars-cov2/sequence.fasta.gz",
-            "locationType": "UriLocation"
-          },
-          "faiLocation": {
-            "uri": "data/sars-cov2/sequence.fasta.gz.fai",
-            "locationType": "UriLocation"
-          },
-          "gziLocation": {
-            "uri": "data/sars-cov2/sequence.fasta.gz.gzi",
+            "uri": "data/jamapa/Lotusjaponicus_Gifu_v1.2_genome.fa.gz.gzi",
             "locationType": "UriLocation"
           }
         }
@@ -50,18 +29,18 @@
   "tracks": [
     {
       "type": "FeatureTrack",
-      "trackId": "jamapa-genes",
-      "name": "JAMAPA Genes",
+      "trackId": "JamapaGenes-FeatureTrack",
+      "name": "JAMAPA_GENES",
       "assemblyNames": ["LjG1.1"],
       "adapter": {
         "type": "Gff3TabixAdapter",
         "gffGzLocation": {
-          "uri": "data/jamapa/jamapa_genes.sorted.gff3.gz",
+          "uri": "data/jamapa/Lotusjaponicus_Gifu_v1.3_predictedProteins.sorted.gff3.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "data/jamapa/jamapa_genes.sorted.gff3.gz.tbi",
+            "uri": "data/jamapa/Lotusjaponicus_Gifu_v1.3_predictedProteins.sorted.gff3.gz.tbi",
             "locationType": "UriLocation"
           }
         }
@@ -69,32 +48,7 @@
       "displays": [
         {
           "type": "LinearBasicDisplay",
-          "displayId": "jamapa-genes-LinearBasicDisplay"
-        }
-      ]
-    },
-    {
-      "type": "FeatureTrack",
-      "trackId": "sars-cov2-genes",
-      "name": "SARS‑CoV‑2 Genes",
-      "assemblyNames": ["sars-cov2"],
-      "adapter": {
-        "type": "Gff3TabixAdapter",
-        "gffGzLocation": {
-          "uri": "data/sars-cov2/ncbi_modified.gff3.gz",
-          "locationType": "UriLocation"
-        },
-        "index": {
-          "location": {
-            "uri": "data/sars-cov2/ncbi_modified.gff3.gz.tbi",
-            "locationType": "UriLocation"
-          }
-        }
-      },
-      "displays": [
-        {
-          "type": "LinearBasicDisplay",
-          "displayId": "sars-cov2-genes-LinearBasicDisplay"
+          "displayId": "JamapaGenes-LinearBasicDisplay"
         }
       ]
     }
