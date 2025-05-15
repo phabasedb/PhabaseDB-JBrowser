@@ -5,7 +5,6 @@
       "sequence": {
         "type": "ReferenceSequenceTrack",
         "trackId": "LjG1.1-ReferenceSequenceTrack",
-        "name": "JAMAPA_SEQUENCE",
         "adapter": {
           "type": "BgzipFastaAdapter",
           "fastaLocation": {
@@ -28,7 +27,6 @@
       "sequence": {
         "type": "ReferenceSequenceTrack",
         "trackId": "G19833-ReferenceSequenceTrack",
-        "name": "G19833_SEQUENCE",
         "adapter": {
           "type": "BgzipFastaAdapter",
           "fastaLocation": {
@@ -47,8 +45,7 @@
       }
     }
   ],
-  "configuration": {},
-  "connections": [],
+
   "tracks": [
     {
       "type": "FeatureTrack",
