@@ -32,15 +32,15 @@
         "adapter": {
           "type": "BgzipFastaAdapter",
           "fastaLocation": {
-            "uri": "data/G19833/Pvulgaris_G19833_442_v2.0.fa.gz",
+            "uri": "data/G19833/Pvulgaris_G19833_442_v2.0_genome.fa.gz",
             "locationType": "UriLocation"
           },
           "faiLocation": {
-            "uri": "data/G19833/Pvulgaris_G19833_442_v2.0.fa.gz.fai",
+            "uri": "data/G19833/Pvulgaris_G19833_442_v2.0_genome.fa.gz.fai",
             "locationType": "UriLocation"
           },
           "gziLocation": {
-            "uri": "data/G19833/Pvulgaris_G19833_442_v2.0.fa.gz.gzi",
+            "uri": "data/G19833/Pvulgaris_G19833_442_v2.0_genome.fa.gz.gzi",
             "locationType": "UriLocation"
           }
         }
@@ -83,12 +83,12 @@
       "adapter": {
         "type": "Gff3TabixAdapter",
         "gffGzLocation": {
-          "uri": "data/G19833/Pvulgaris_G19833_442_v2.1.gene.sorted.gff3.gz",
+          "uri": "data/G19833/Pvulgaris_G19833_442_v2.1_gene.sorted.gff3.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "data/G19833/Pvulgaris_G19833_442_v2.1.gene.sorted.gff3.gz.tbi",
+            "uri": "data/G19833/Pvulgaris_G19833_442_v2.1_gene.sorted.gff3.gz.tbi",
             "locationType": "UriLocation"
           }
         }
