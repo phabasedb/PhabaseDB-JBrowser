@@ -56,7 +56,7 @@ index.html
 manifest.json
 robots.txt
 static/
-test_data/
+data/
 version.txt
 ```
 
